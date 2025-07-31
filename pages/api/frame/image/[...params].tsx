@@ -9,14 +9,9 @@ export const config = {
 
 export default async function handler(req: NextApiRequest, res: NextApiResponse) {
   try {
-    // Add CORS headers for frame image compatibility
-    res.setHeader('Access-Control-Allow-Origin', '*');
-    res.setHeader('Access-Control-Allow-Methods', 'GET, HEAD, OPTIONS');
-    res.setHeader('Access-Control-Allow-Headers', 'Content-Type');
-    
     // Handle preflight requests
     if (req.method === 'OPTIONS') {
-      return res.status(200).end();
+      return new Response(null, { status: 200, headers: { 'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Methods': 'GET, HEAD, OPTIONS', 'Access-Control-Allow-Headers': 'Content-Type' } });
     }
 
     const { params } = req.query;
@@ -85,6 +80,10 @@ async function generateMarketImage(res: NextApiResponse, market: any) {
     {
       width: 1200,
       height: 630,
+      headers: {
+        'Access-Control-Allow-Origin': '*',
+        'Cache-Control': 'public, max-age=60',
+      },
     },
   );
 }
@@ -109,7 +108,14 @@ function generateDetailsImage(res: NextApiResponse, market: any) {
         <p>Click "Back to Market" to return</p>
       </div>
     ),
-    { width: 1200, height: 630 },
+    {
+      width: 1200,
+      height: 630,
+      headers: {
+        'Access-Control-Allow-Origin': '*',
+        'Cache-Control': 'public, max-age=300',
+      },
+    },
   );
 }
 
@@ -126,7 +132,14 @@ function generateBetResponseImage(req: NextApiRequest, res: NextApiResponse) {
         <p>Click "Back to Market" to return</p>
       </div>
     ),
-    { width: 1200, height: 630 },
+    {
+      width: 1200,
+      height: 630,
+      headers: {
+        'Access-Control-Allow-Origin': '*',
+        'Cache-Control': 'public, max-age=3600',
+      },
+    },
   );
 }
 
@@ -139,7 +152,13 @@ function generateErrorImage(res: NextApiResponse, message: string) {
         <p>Please try again later</p>
       </div>
     ),
-    { width: 1200, height: 630 },
+    {
+      width: 1200,
+      height: 630,
+      headers: {
+        'Access-Control-Allow-Origin': '*',
+      },
+    },
   );
 }
 
@@ -156,7 +175,14 @@ function generateHomeImage(res: NextApiResponse) {
         <p>Powered by Farcaster Frames • Built with Claude</p>
       </div>
     ),
-    { width: 1200, height: 630 },
+    {
+      width: 1200,
+      height: 630,
+      headers: {
+        'Access-Control-Allow-Origin': '*',
+        'Cache-Control': 'public, max-age=300',
+      },
+    },
   );
 }
 
@@ -169,7 +195,14 @@ function generateNoMarketsImage(res: NextApiResponse) {
         <p>Mention @watchthis with your prediction on Farcaster</p>
       </div>
     ),
-    { width: 1200, height: 630 },
+    {
+      width: 1200,
+      height: 630,
+      headers: {
+        'Access-Control-Allow-Origin': '*',
+        'Cache-Control': 'public, max-age=60',
+      },
+    },
   );
 }
 
@@ -188,7 +221,14 @@ function generateBetConfirmImage(req: NextApiRequest, res: NextApiResponse) {
         <p>Click "Confirm" to proceed or "Cancel" to go back</p>
       </div>
     ),
-    { width: 1200, height: 630 },
+    {
+      width: 1200,
+      height: 630,
+      headers: {
+        'Access-Control-Allow-Origin': '*',
+        'Cache-Control': 'public, max-age=60',
+      },
+    },
   );
 }
 
@@ -207,6 +247,13 @@ function generateBetSuccessImage(req: NextApiRequest, res: NextApiResponse) {
         <p>Navigate back to view more markets or details</p>
       </div>
     ),
-    { width: 1200, height: 630 },
+    {
+      width: 1200,
+      height: 630,
+      headers: {
+        'Access-Control-Allow-Origin': '*',
+        'Cache-Control': 'public, max-age=300',
+      },
+    },
   );
 }
