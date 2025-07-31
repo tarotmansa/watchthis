@@ -1,0 +1,854 @@
+
+> iwager-watchthis-bot@0.1.0 dev
+> next dev
+
+  ▲ Next.js 14.2.30
+  - Local:        http://localhost:3000
+  - Environments: .env.local
+
+ ✓ Starting...
+ ✓ Ready in 1330ms
+ ✓ Compiled /api/frame/[marketId] in 138ms (64 modules)
+(node:64140) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+🖼️ Generating frame for market: market_test
+❌ Market not found: market_test
+ HEAD /api/frame/market_test 404 in 832ms
+ ✓ Compiled /api/neynar/webhook in 72ms (69 modules)
+🚀 Webhook endpoint hit: {
+  method: 'POST',
+  timestamp: '2025-07-30T17:09:12.590Z',
+  userAgent: 'Convoy/v25.6.6',
+  contentType: 'application/json'
+}
+📦 Raw webhook payload: {
+  "created_at": 1753895350,
+  "type": "cast.created",
+  "data": {
+    "object": "cast",
+    "hash": "0xd7ced240fcc990af1890755a673ac35ae347cdca",
+    "author": {
+      "object": "user",
+      "fid": 1017136,
+      "username": "tarotmancer",
+      "display_name": "trustmebro",
+      "pfp_url": "https://imagedelivery.net/BXluQx4ige9GuW0Ia56BHw/09af3026-3731-4f51-db37-6a6794a37100/original",
+      "custody_address": "0x70f31ff5ee2df47aa1f7def476220c3fb8c0d155",
+      "profile": {
+        "bio": {
+          "text": ""
+        }
+      },
+      "follower_count": 0,
+      "following_count": 6,
+      "verifications": [
+        "0xc37f6c2b106a1a1e4e8b884b17942ee111897485"
+      ],
+      "verified_addresses": {
+        "eth_addresses": [
+          "0xc37f6c2b106a1a1e4e8b884b17942ee111897485"
+        ],
+        "sol_addresses": [
+          "Dnoehwu1GsHApjZ1kUca6j6YQS2CZM4oQshtETaLYWki"
+        ],
+        "primary": {
+          "eth_address": "0xc37f6c2b106a1a1e4e8b884b17942ee111897485",
+          "sol_address": "Dnoehwu1GsHApjZ1kUca6j6YQS2CZM4oQshtETaLYWki"
+        }
+      },
+      "verified_accounts": [],
+      "power_badge": false,
+      "experimental": {
+        "neynar_user_score": 0.42,
+        "deprecation_notice": "The `neynar_user_score` field under `experimental` will be deprecated after June 1, 2025, as it will be formally promoted to a stable field named `score` within the user object."
+      },
+      "score": 0.42
+    },
+    "app": {
+      "object": "user_dehydrated",
+      "fid": 9152,
+      "username": "warpcast",
+      "display_name": "Warpcast",
+      "pfp_url": "https://i.imgur.com/3d6fFAI.png",
+      "custody_address": "0x02ef790dd7993a35fd847c053eddae940d055596"
+    },
+    "thread_hash": "0xd7ced240fcc990af1890755a673ac35ae347cdca",
+    "parent_hash": null,
+    "parent_url": null,
+    "root_parent_url": null,
+    "parent_author": {
+      "fid": null
+    },
+    "text": "@watchthis jack will miss his flight on next Wednesday",
+    "timestamp": "2025-07-30T17:09:07.000Z",
+    "embeds": [],
+    "channel": null,
+    "reactions": {
+      "likes_count": 0,
+      "recasts_count": 0,
+      "likes": [],
+      "recasts": []
+    },
+    "replies": {
+      "count": 0
+    },
+    "mentioned_profiles": [
+      {
+        "object": "user",
+        "fid": 1138489,
+        "username": "watchthis",
+        "display_name": "watch this bot",
+        "pfp_url": "https://imagedelivery.net/BXluQx4ige9GuW0Ia56BHw/13cd6c7b-8fd2-4768-48ca-e32ac3620100/original",
+        "custody_address": "0x086eeb68f120707122648a9b6fb57dde13e3ecad",
+        "profile": {
+          "bio": {
+            "text": "watch this"
+          }
+        },
+        "follower_count": 0,
+        "following_count": 0,
+        "verifications": [
+          "0xb09f617a08537930da84dc8e974f3fe7a212c875"
+        ],
+        "verified_addresses": {
+          "eth_addresses": [
+            "0xb09f617a08537930da84dc8e974f3fe7a212c875"
+          ],
+          "sol_addresses": [
+            "6o3WEnH5apaukKJRFK78Vtz88VEhfhFfqmSyKXc8xyoA"
+          ],
+          "primary": {
+            "eth_address": "0xb09f617a08537930da84dc8e974f3fe7a212c875",
+            "sol_address": "6o3WEnH5apaukKJRFK78Vtz88VEhfhFfqmSyKXc8xyoA"
+          }
+        },
+        "verified_accounts": [],
+        "power_badge": false,
+        "experimental": {
+          "neynar_user_score": 0.11,
+          "deprecation_notice": "The `neynar_user_score` field under `experimental` will be deprecated after June 1, 2025, as it will be formally promoted to a stable field named `score` within the user object."
+        },
+        "score": 0.11
+      }
+    ],
+    "mentioned_profiles_ranges": [
+      {
+        "start": 0,
+        "end": 10
+      }
+    ],
+    "mentioned_channels": [],
+    "mentioned_channels_ranges": [],
+    "event_timestamp": "2025-07-30T17:09:10.410Z"
+  }
+}
+📝 New cast detected: {
+  hash: '0xd7ced240fcc990af1890755a673ac35ae347cdca',
+  author: 'tarotmancer',
+  fid: 1017136,
+  text: '@watchthis jack will miss his flight on next Wednesday',
+  channel: 'no-channel',
+  timestamp: '2025-07-30T17:09:07.000Z'
+}
+🔍 Checking for @watchthis mention in text: @watchthis jack will miss his flight on next Wednesday
+🎯 @watchthis mention detected! {
+  hash: '0xd7ced240fcc990af1890755a673ac35ae347cdca',
+  author: 'tarotmancer',
+  fid: 1017136,
+  text: '@watchthis jack will miss his flight on next Wednesday',
+  channel: 'no-channel',
+  timestamp: '2025-07-30T17:09:07.000Z',
+  mentioned_profiles: [
+    {
+      object: 'user',
+      fid: 1138489,
+      username: 'watchthis',
+      display_name: 'watch this bot',
+      pfp_url: 'https://imagedelivery.net/BXluQx4ige9GuW0Ia56BHw/13cd6c7b-8fd2-4768-48ca-e32ac3620100/original',
+      custody_address: '0x086eeb68f120707122648a9b6fb57dde13e3ecad',
+      profile: [Object],
+      follower_count: 0,
+      following_count: 0,
+      verifications: [Array],
+      verified_addresses: [Object],
+      verified_accounts: [],
+      power_badge: false,
+      experimental: [Object],
+      score: 0.11
+    }
+  ]
+}
+🔍 Full mention analysis: {
+  castHash: '0xd7ced240fcc990af1890755a673ac35ae347cdca',
+  authorFid: 1017136,
+  authorUsername: 'tarotmancer',
+  authorDisplayName: 'trustmebro',
+  castText: '@watchthis jack will miss his flight on next Wednesday',
+  channelId: undefined,
+  channelName: undefined,
+  timestamp: '2025-07-30T17:09:07.000Z',
+  hasParent: false,
+  parentHash: null,
+  threadHash: '0xd7ced240fcc990af1890755a673ac35ae347cdca',
+  mentionedProfiles: 1,
+  embedsCount: 0,
+  likesCount: 0,
+  recastsCount: 0,
+  repliesCount: 0
+}
+
+🔍 STARTING VALIDATION PIPELINE
+📝 Cast Details: {
+  hash: '0xd7ced240fcc990af1890755a673ac35ae347cdca',
+  author: 'tarotmancer',
+  fid: 1017136,
+  text: '@watchthis jack will miss his flight on next Wednesday',
+  timestamp: '2025-07-30T17:09:07.000Z'
+}
+🔍 Starting validation for text: @watchthis jack will miss his flight on next Wednesday
+
+❌ BASIC VALIDATION FAILED
+📋 Basic validation rejection details: {
+  hash: '0xd7ced240fcc990af1890755a673ac35ae347cdca',
+  author: 'tarotmancer',
+  fid: 1017136,
+  text: '@watchthis jack will miss his flight on next Wednesday',
+  error: 'Use a valid timeframe: 1h, 24h, today, tomorrow, December 31st, etc.',
+  errorType: 'TIMEFRAME_ERROR',
+  skipAI: 'AI validation skipped due to basic validation failure'
+}
+📝 Sending TIMEFRAME_ERROR response
+🤖 Sending regular bot reply: {
+  parentHash: '0xd7ced240fcc990af1890755a673ac35ae347cdca',
+  replyText: '❌ Invalid Timeframe: Use a valid timeframe: 1h, 24h, today, tomorrow, December 31st, etc.\n' +
+    '\n' +
+    'Examples:...'
+}
+✅ Bot reply sent successfully: {
+  castHash: '0x9379c21615e2d86d3bf52a38378ab149229a864f',
+  parentHash: '0xd7ced240fcc990af1890755a673ac35ae347cdca'
+}
+❌ BASIC VALIDATION ERROR RESPONSE SENT - pipeline complete
+ POST /api/neynar/webhook 200 in 991ms
+🚀 Webhook endpoint hit: {
+  method: 'POST',
+  timestamp: '2025-07-30T17:10:05.118Z',
+  userAgent: 'Convoy/v25.6.6',
+  contentType: 'application/json'
+}
+📦 Raw webhook payload: {
+  "created_at": 1753895403,
+  "type": "cast.created",
+  "data": {
+    "object": "cast",
+    "hash": "0xf3f7c83393b58dbeb779f4cc6f558d466cdc52ea",
+    "author": {
+      "object": "user",
+      "fid": 1017136,
+      "username": "tarotmancer",
+      "display_name": "trustmebro",
+      "pfp_url": "https://imagedelivery.net/BXluQx4ige9GuW0Ia56BHw/09af3026-3731-4f51-db37-6a6794a37100/original",
+      "custody_address": "0x70f31ff5ee2df47aa1f7def476220c3fb8c0d155",
+      "profile": {
+        "bio": {
+          "text": ""
+        }
+      },
+      "follower_count": 0,
+      "following_count": 6,
+      "verifications": [
+        "0xc37f6c2b106a1a1e4e8b884b17942ee111897485"
+      ],
+      "verified_addresses": {
+        "eth_addresses": [
+          "0xc37f6c2b106a1a1e4e8b884b17942ee111897485"
+        ],
+        "sol_addresses": [
+          "Dnoehwu1GsHApjZ1kUca6j6YQS2CZM4oQshtETaLYWki"
+        ],
+        "primary": {
+          "eth_address": "0xc37f6c2b106a1a1e4e8b884b17942ee111897485",
+          "sol_address": "Dnoehwu1GsHApjZ1kUca6j6YQS2CZM4oQshtETaLYWki"
+        }
+      },
+      "verified_accounts": [],
+      "power_badge": false,
+      "experimental": {
+        "neynar_user_score": 0.42,
+        "deprecation_notice": "The `neynar_user_score` field under `experimental` will be deprecated after June 1, 2025, as it will be formally promoted to a stable field named `score` within the user object."
+      },
+      "score": 0.42
+    },
+    "app": {
+      "object": "user_dehydrated",
+      "fid": 9152,
+      "username": "warpcast",
+      "display_name": "Warpcast",
+      "pfp_url": "https://i.imgur.com/3d6fFAI.png",
+      "custody_address": "0x02ef790dd7993a35fd847c053eddae940d055596"
+    },
+    "thread_hash": "0xf3f7c83393b58dbeb779f4cc6f558d466cdc52ea",
+    "parent_hash": null,
+    "parent_url": null,
+    "root_parent_url": null,
+    "parent_author": {
+      "fid": null
+    },
+    "text": "@watchthis BNB will hit $200k by December 31st",
+    "timestamp": "2025-07-30T17:10:00.000Z",
+    "embeds": [],
+    "channel": null,
+    "reactions": {
+      "likes_count": 0,
+      "recasts_count": 0,
+      "likes": [],
+      "recasts": []
+    },
+    "replies": {
+      "count": 0
+    },
+    "mentioned_profiles": [
+      {
+        "object": "user",
+        "fid": 1138489,
+        "username": "watchthis",
+        "display_name": "watch this bot",
+        "pfp_url": "https://imagedelivery.net/BXluQx4ige9GuW0Ia56BHw/13cd6c7b-8fd2-4768-48ca-e32ac3620100/original",
+        "custody_address": "0x086eeb68f120707122648a9b6fb57dde13e3ecad",
+        "profile": {
+          "bio": {
+            "text": "watch this"
+          }
+        },
+        "follower_count": 0,
+        "following_count": 0,
+        "verifications": [
+          "0xb09f617a08537930da84dc8e974f3fe7a212c875"
+        ],
+        "verified_addresses": {
+          "eth_addresses": [
+            "0xb09f617a08537930da84dc8e974f3fe7a212c875"
+          ],
+          "sol_addresses": [
+            "6o3WEnH5apaukKJRFK78Vtz88VEhfhFfqmSyKXc8xyoA"
+          ],
+          "primary": {
+            "eth_address": "0xb09f617a08537930da84dc8e974f3fe7a212c875",
+            "sol_address": "6o3WEnH5apaukKJRFK78Vtz88VEhfhFfqmSyKXc8xyoA"
+          }
+        },
+        "verified_accounts": [],
+        "power_badge": false,
+        "experimental": {
+          "neynar_user_score": 0.11,
+          "deprecation_notice": "The `neynar_user_score` field under `experimental` will be deprecated after June 1, 2025, as it will be formally promoted to a stable field named `score` within the user object."
+        },
+        "score": 0.11
+      }
+    ],
+    "mentioned_profiles_ranges": [
+      {
+        "start": 0,
+        "end": 10
+      }
+    ],
+    "mentioned_channels": [],
+    "mentioned_channels_ranges": [],
+    "event_timestamp": "2025-07-30T17:10:03.430Z"
+  }
+}
+📝 New cast detected: {
+  hash: '0xf3f7c83393b58dbeb779f4cc6f558d466cdc52ea',
+  author: 'tarotmancer',
+  fid: 1017136,
+  text: '@watchthis BNB will hit $200k by December 31st',
+  channel: 'no-channel',
+  timestamp: '2025-07-30T17:10:00.000Z'
+}
+🔍 Checking for @watchthis mention in text: @watchthis BNB will hit $200k by December 31st
+🎯 @watchthis mention detected! {
+  hash: '0xf3f7c83393b58dbeb779f4cc6f558d466cdc52ea',
+  author: 'tarotmancer',
+  fid: 1017136,
+  text: '@watchthis BNB will hit $200k by December 31st',
+  channel: 'no-channel',
+  timestamp: '2025-07-30T17:10:00.000Z',
+  mentioned_profiles: [
+    {
+      object: 'user',
+      fid: 1138489,
+      username: 'watchthis',
+      display_name: 'watch this bot',
+      pfp_url: 'https://imagedelivery.net/BXluQx4ige9GuW0Ia56BHw/13cd6c7b-8fd2-4768-48ca-e32ac3620100/original',
+      custody_address: '0x086eeb68f120707122648a9b6fb57dde13e3ecad',
+      profile: [Object],
+      follower_count: 0,
+      following_count: 0,
+      verifications: [Array],
+      verified_addresses: [Object],
+      verified_accounts: [],
+      power_badge: false,
+      experimental: [Object],
+      score: 0.11
+    }
+  ]
+}
+🔍 Full mention analysis: {
+  castHash: '0xf3f7c83393b58dbeb779f4cc6f558d466cdc52ea',
+  authorFid: 1017136,
+  authorUsername: 'tarotmancer',
+  authorDisplayName: 'trustmebro',
+  castText: '@watchthis BNB will hit $200k by December 31st',
+  channelId: undefined,
+  channelName: undefined,
+  timestamp: '2025-07-30T17:10:00.000Z',
+  hasParent: false,
+  parentHash: null,
+  threadHash: '0xf3f7c83393b58dbeb779f4cc6f558d466cdc52ea',
+  mentionedProfiles: 1,
+  embedsCount: 0,
+  likesCount: 0,
+  recastsCount: 0,
+  repliesCount: 0
+}
+
+🔍 STARTING VALIDATION PIPELINE
+📝 Cast Details: {
+  hash: '0xf3f7c83393b58dbeb779f4cc6f558d466cdc52ea',
+  author: 'tarotmancer',
+  fid: 1017136,
+  text: '@watchthis BNB will hit $200k by December 31st',
+  timestamp: '2025-07-30T17:10:00.000Z'
+}
+🔍 Starting validation for text: @watchthis BNB will hit $200k by December 31st
+✅ Validation passed for text: @watchthis BNB will hit $200k by December 31st
+✅ BASIC VALIDATION PASSED
+📊 Basic validation result: { valid: true, text: '@watchthis BNB will hit $200k by December 31st' }
+🤖 Initializing AI validation...
+📝 Text to validate: @watchthis BNB will hit $200k by December 31st
+🔧 Using model: mistralai/mistral-7b-instruct
+🌐 API endpoint: https://openrouter.ai/api/v1
+📤 Sending request to OpenRouter API...
+📥 AI API Response received
+⏱️ Response time: 3908ms
+🤖 Raw AI response: {
+  "valid": false,
+  "confidence": 1.0,
+  "reasoning": "The prediction is not valid because it does not meet the following criteria: \n1. MEASURABLE: The price of BNB is currently much lower than $200k, making it highly unlikely to reach that value within the specified timeframe. \n2. TIME-BOUND: The prediction has a clear resolution timeframe (December 31st). \n3. SPECIFIC: The prediction is specific enough to avoid ambiguity. \n4. RESOLVABLE: It can be determined if BNB reaches $200k or not. \n5. NOT SUBJECTIVE: The prediction avoids opinions, feelings, or subjective judgments.",
+  "error": null
+}
+📊 API usage: {
+  model: 'mistralai/mistral-7b-instruct',
+  promptTokens: 354,
+  completionTokens: 181,
+  totalTokens: 535
+}
+🔄 Parsing AI response...
+✅ JSON parsing successful
+📋 Parsed AI result: {
+  valid: false,
+  confidence: 1,
+  reasoning: 'The prediction is not valid because it does not meet the following criteria: \n' +
+    '1. MEASURABLE: The price of BNB is currently much lower than $200k, making it highly unlikely to reach that value within the specified timeframe. \n' +
+    '2. TIME-BOUND: The prediction has a clear resolution timeframe (December 31st). \n' +
+    '3. SPECIFIC: The prediction is specific enough to avoid ambiguity. \n' +
+    '4. RESOLVABLE: It can be determined if BNB reaches $200k or not. \n' +
+    '5. NOT SUBJECTIVE: The prediction avoids opinions, feelings, or subjective judgments.',
+  error: null
+}
+✅ AI validation processing complete
+📊 Final validation result: {
+  valid: false,
+  confidence: 1,
+  confidencePercent: '100%',
+  reasoning: 'The prediction is not valid because it does not meet the following criteria: \n' +
+    '1. MEASURABLE: The price of BNB is currently much lower than $200k, making it highly unlikely to reach that value within the specified timeframe. \n' +
+    '2. TIME-BOUND: The prediction has a clear resolution timeframe (December 31st). \n' +
+    '3. SPECIFIC: The prediction is specific enough to avoid ambiguity. \n' +
+    '4. RESOLVABLE: It can be determined if BNB reaches $200k or not. \n' +
+    '5. NOT SUBJECTIVE: The prediction avoids opinions, feelings, or subjective judgments.',
+  error: undefined,
+  processingTime: '3908ms'
+}
+
+🤖 STARTING AI VALIDATION
+❌ AI VALIDATION FAILED
+📋 AI rejection details: {
+  valid: false,
+  error: undefined,
+  reasoning: 'The prediction is not valid because it does not meet the following criteria: \n' +
+    '1. MEASURABLE: The price of BNB is currently much lower than $200k, making it highly unlikely to reach that value within the specified timeframe. \n' +
+    '2. TIME-BOUND: The prediction has a clear resolution timeframe (December 31st). \n' +
+    '3. SPECIFIC: The prediction is specific enough to avoid ambiguity. \n' +
+    '4. RESOLVABLE: It can be determined if BNB reaches $200k or not. \n' +
+    '5. NOT SUBJECTIVE: The prediction avoids opinions, feelings, or subjective judgments.',
+  confidence: 1,
+  predictionText: 'BNB will hit $200k by December 31st'
+}
+🤖 Sending regular bot reply: {
+  parentHash: '0xf3f7c83393b58dbeb779f4cc6f558d466cdc52ea',
+  replyText: '❌ AI Validation Failed: undefined\n' +
+    '\n' +
+    '🤖 Reason: The prediction is not valid because it does not meet t...'
+}
+✅ Bot reply sent successfully: {
+  castHash: '0x3d7f893cd1c92185c1ea55efa52c055828b14259',
+  parentHash: '0xf3f7c83393b58dbeb779f4cc6f558d466cdc52ea'
+}
+❌ ERROR RESPONSE SENT - validation pipeline complete
+ POST /api/neynar/webhook 200 in 4405ms
+🚀 Webhook endpoint hit: {
+  method: 'POST',
+  timestamp: '2025-07-30T17:10:44.745Z',
+  userAgent: 'Convoy/v25.6.6',
+  contentType: 'application/json'
+}
+📦 Raw webhook payload: {
+  "created_at": 1753895443,
+  "type": "cast.created",
+  "data": {
+    "object": "cast",
+    "hash": "0x1f06247c33b4f349587a82252298589381e4bb13",
+    "author": {
+      "object": "user",
+      "fid": 1017136,
+      "username": "tarotmancer",
+      "display_name": "trustmebro",
+      "pfp_url": "https://imagedelivery.net/BXluQx4ige9GuW0Ia56BHw/09af3026-3731-4f51-db37-6a6794a37100/original",
+      "custody_address": "0x70f31ff5ee2df47aa1f7def476220c3fb8c0d155",
+      "profile": {
+        "bio": {
+          "text": ""
+        }
+      },
+      "follower_count": 0,
+      "following_count": 6,
+      "verifications": [
+        "0xc37f6c2b106a1a1e4e8b884b17942ee111897485"
+      ],
+      "verified_addresses": {
+        "eth_addresses": [
+          "0xc37f6c2b106a1a1e4e8b884b17942ee111897485"
+        ],
+        "sol_addresses": [
+          "Dnoehwu1GsHApjZ1kUca6j6YQS2CZM4oQshtETaLYWki"
+        ],
+        "primary": {
+          "eth_address": "0xc37f6c2b106a1a1e4e8b884b17942ee111897485",
+          "sol_address": "Dnoehwu1GsHApjZ1kUca6j6YQS2CZM4oQshtETaLYWki"
+        }
+      },
+      "verified_accounts": [],
+      "power_badge": false,
+      "experimental": {
+        "neynar_user_score": 0.42,
+        "deprecation_notice": "The `neynar_user_score` field under `experimental` will be deprecated after June 1, 2025, as it will be formally promoted to a stable field named `score` within the user object."
+      },
+      "score": 0.42
+    },
+    "app": {
+      "object": "user_dehydrated",
+      "fid": 9152,
+      "username": "warpcast",
+      "display_name": "Warpcast",
+      "pfp_url": "https://i.imgur.com/3d6fFAI.png",
+      "custody_address": "0x02ef790dd7993a35fd847c053eddae940d055596"
+    },
+    "thread_hash": "0x1f06247c33b4f349587a82252298589381e4bb13",
+    "parent_hash": null,
+    "parent_url": null,
+    "root_parent_url": null,
+    "parent_author": {
+      "fid": null
+    },
+    "text": "@watchthis BNB will hit $1k by December 31st",
+    "timestamp": "2025-07-30T17:10:39.000Z",
+    "embeds": [],
+    "channel": null,
+    "reactions": {
+      "likes_count": 0,
+      "recasts_count": 0,
+      "likes": [],
+      "recasts": []
+    },
+    "replies": {
+      "count": 0
+    },
+    "mentioned_profiles": [
+      {
+        "object": "user",
+        "fid": 1138489,
+        "username": "watchthis",
+        "display_name": "watch this bot",
+        "pfp_url": "https://imagedelivery.net/BXluQx4ige9GuW0Ia56BHw/13cd6c7b-8fd2-4768-48ca-e32ac3620100/original",
+        "custody_address": "0x086eeb68f120707122648a9b6fb57dde13e3ecad",
+        "profile": {
+          "bio": {
+            "text": "watch this"
+          }
+        },
+        "follower_count": 0,
+        "following_count": 0,
+        "verifications": [
+          "0xb09f617a08537930da84dc8e974f3fe7a212c875"
+        ],
+        "verified_addresses": {
+          "eth_addresses": [
+            "0xb09f617a08537930da84dc8e974f3fe7a212c875"
+          ],
+          "sol_addresses": [
+            "6o3WEnH5apaukKJRFK78Vtz88VEhfhFfqmSyKXc8xyoA"
+          ],
+          "primary": {
+            "eth_address": "0xb09f617a08537930da84dc8e974f3fe7a212c875",
+            "sol_address": "6o3WEnH5apaukKJRFK78Vtz88VEhfhFfqmSyKXc8xyoA"
+          }
+        },
+        "verified_accounts": [],
+        "power_badge": false,
+        "experimental": {
+          "neynar_user_score": 0.11,
+          "deprecation_notice": "The `neynar_user_score` field under `experimental` will be deprecated after June 1, 2025, as it will be formally promoted to a stable field named `score` within the user object."
+        },
+        "score": 0.11
+      }
+    ],
+    "mentioned_profiles_ranges": [
+      {
+        "start": 0,
+        "end": 10
+      }
+    ],
+    "mentioned_channels": [],
+    "mentioned_channels_ranges": [],
+    "event_timestamp": "2025-07-30T17:10:43.442Z"
+  }
+}
+📝 New cast detected: {
+  hash: '0x1f06247c33b4f349587a82252298589381e4bb13',
+  author: 'tarotmancer',
+  fid: 1017136,
+  text: '@watchthis BNB will hit $1k by December 31st',
+  channel: 'no-channel',
+  timestamp: '2025-07-30T17:10:39.000Z'
+}
+🔍 Checking for @watchthis mention in text: @watchthis BNB will hit $1k by December 31st
+🎯 @watchthis mention detected! {
+  hash: '0x1f06247c33b4f349587a82252298589381e4bb13',
+  author: 'tarotmancer',
+  fid: 1017136,
+  text: '@watchthis BNB will hit $1k by December 31st',
+  channel: 'no-channel',
+  timestamp: '2025-07-30T17:10:39.000Z',
+  mentioned_profiles: [
+    {
+      object: 'user',
+      fid: 1138489,
+      username: 'watchthis',
+      display_name: 'watch this bot',
+      pfp_url: 'https://imagedelivery.net/BXluQx4ige9GuW0Ia56BHw/13cd6c7b-8fd2-4768-48ca-e32ac3620100/original',
+      custody_address: '0x086eeb68f120707122648a9b6fb57dde13e3ecad',
+      profile: [Object],
+      follower_count: 0,
+      following_count: 0,
+      verifications: [Array],
+      verified_addresses: [Object],
+      verified_accounts: [],
+      power_badge: false,
+      experimental: [Object],
+      score: 0.11
+    }
+  ]
+}
+🔍 Full mention analysis: {
+  castHash: '0x1f06247c33b4f349587a82252298589381e4bb13',
+  authorFid: 1017136,
+  authorUsername: 'tarotmancer',
+  authorDisplayName: 'trustmebro',
+  castText: '@watchthis BNB will hit $1k by December 31st',
+  channelId: undefined,
+  channelName: undefined,
+  timestamp: '2025-07-30T17:10:39.000Z',
+  hasParent: false,
+  parentHash: null,
+  threadHash: '0x1f06247c33b4f349587a82252298589381e4bb13',
+  mentionedProfiles: 1,
+  embedsCount: 0,
+  likesCount: 0,
+  recastsCount: 0,
+  repliesCount: 0
+}
+
+🔍 STARTING VALIDATION PIPELINE
+📝 Cast Details: {
+  hash: '0x1f06247c33b4f349587a82252298589381e4bb13',
+  author: 'tarotmancer',
+  fid: 1017136,
+  text: '@watchthis BNB will hit $1k by December 31st',
+  timestamp: '2025-07-30T17:10:39.000Z'
+}
+🔍 Starting validation for text: @watchthis BNB will hit $1k by December 31st
+✅ Validation passed for text: @watchthis BNB will hit $1k by December 31st
+✅ BASIC VALIDATION PASSED
+📊 Basic validation result: { valid: true, text: '@watchthis BNB will hit $1k by December 31st' }
+🤖 Initializing AI validation...
+📝 Text to validate: @watchthis BNB will hit $1k by December 31st
+🔧 Using model: mistralai/mistral-7b-instruct
+🌐 API endpoint: https://openrouter.ai/api/v1
+📤 Sending request to OpenRouter API...
+📥 AI API Response received
+⏱️ Response time: 2206ms
+🤖 Raw AI response: {
+  "valid": true,
+  "confidence": 0.8,
+  "reasoning": "The prediction is measurable, time-bound, specific, and resolvable. It can be objectively measured by checking the price of BNB on a reliable exchange, it has a clear resolution timeframe (December 31st), it is specific (the price is a clear number), and a clear winner/outcome can be determined based on whether the price reaches $1k or not.",
+  "error": null
+}
+📊 API usage: {
+  model: 'mistralai/mistral-7b-instruct',
+  promptTokens: 353,
+  completionTokens: 119,
+  totalTokens: 472
+}
+🔄 Parsing AI response...
+✅ JSON parsing successful
+📋 Parsed AI result: {
+  valid: true,
+  confidence: 0.8,
+  reasoning: 'The prediction is measurable, time-bound, specific, and resolvable. It can be objectively measured by checking the price of BNB on a reliable exchange, it has a clear resolution timeframe (December 31st), it is specific (the price is a clear number), and a clear winner/outcome can be determined based on whether the price reaches $1k or not.',
+  error: null
+}
+✅ AI validation processing complete
+📊 Final validation result: {
+  valid: true,
+  confidence: 0.8,
+  confidencePercent: '80%',
+  reasoning: 'The prediction is measurable, time-bound, specific, and resolvable. It can be objectively measured by checking the price of BNB on a reliable exchange, it has a clear resolution timeframe (December 31st), it is specific (the price is a clear number), and a clear winner/outcome can be determined based on whether the price reaches $1k or not.',
+  error: undefined,
+  processingTime: '2206ms'
+}
+
+🤖 STARTING AI VALIDATION
+🎉 AI VALIDATION PASSED
+📊 AI validation results: {
+  valid: true,
+  confidence: 0.8,
+  confidencePercent: '80%',
+  reasoning: 'The prediction is measurable, time-bound, specific, and resolvable. It can be objectively measured by checking the price of BNB on a reliable exchange, it has a clear resolution timeframe (December 31st), it is specific (the price is a clear number), and a clear winner/outcome can be determined based on whether the price reaches $1k or not.',
+  predictionText: 'BNB will hit $1k by December 31st'
+}
+
+💾 STARTING MARKET CREATION (FUNCTION 4)
+💾 Creating market in Supabase...
+📋 Market data: {
+  question: 'BNB will hit $1k by December 31st',
+  creatorFid: 1017136,
+  creatorUsername: 'tarotmancer',
+  timeframe: 'december 31st',
+  castHash: '0x1f06247c33b4f349587a82252298589381e4bb13',
+  aiConfidence: 0.8
+}
+🔍 Attempt 1: Generated market ID: market_196d17ab7e5d4e49
+📊 Query result: {
+  existingMarket: null,
+  queryError: 'JSON object requested, multiple (or no) rows returned',
+  marketId: 'market_196d17ab7e5d4e49'
+}
+✅ Unique market ID found: market_196d17ab7e5d4e49
+🔄 Inserting market into database...
+✅ Market created successfully: {
+  id: 'bf37e05a-294e-4d30-9727-9416d497898b',
+  market_id: 'market_196d17ab7e5d4e49',
+  question: 'BNB will hit $1k by December 31st',
+  close_time: '2025-08-30T17:10:47.834+00:00'
+}
+✅ MARKET CREATED SUCCESSFULLY
+📊 Market details: {
+  id: 'bf37e05a-294e-4d30-9727-9416d497898b',
+  market_id: 'market_196d17ab7e5d4e49',
+  question: 'BNB will hit $1k by December 31st',
+  timeframe: 'december 31st',
+  close_time: '2025-08-30T17:10:47.834+00:00',
+  creator: 'tarotmancer',
+  ai_confidence: 0.8
+}
+
+🖼️ STARTING FRAME GENERATION (FUNCTION 5)
+🔗 Frame URL generated: https://42ccb2de7c61.ngrok-free.app/api/frame/market_196d17ab7e5d4e49
+🤖 Publishing direct frame cast (not embed): {
+  parentHash: '0x1f06247c33b4f349587a82252298589381e4bb13',
+  replyText: '✅ Market created! "BNB will hit $1k by December 31st"\n' +
+    '\n' +
+    '🤖 AI Confidence: 80%\n' +
+    '⏰ Closes: december 31st...',
+  marketId: 'market_196d17ab7e5d4e49'
+}
+🖼️ Publishing native frame cast with clean URL: https://42ccb2de7c61.ngrok-free.app/api/frame/market_196d17ab7e5d4e49
+✅ Frame cast sent successfully: {
+  castHash: '0x0107b3fac9dba9942454ed839af1fdedf170d5f2',
+  parentHash: '0x1f06247c33b4f349587a82252298589381e4bb13',
+  frameUrl: 'https://42ccb2de7c61.ngrok-free.app/api/frame/market_196d17ab7e5d4e49'
+}
+✅ MARKET CREATION + NATIVE FRAME RESPONSE SENT
+ POST /api/neynar/webhook 200 in 4163ms
+ ✓ Compiled /api/frame/[marketId] in 45ms (71 modules)
+ ⨯ Error: ENOENT: no such file or directory, open '/Users/vitalii/Desktop/pets/watchthis/.next/server/webpack-api-runtime.js'
+    at Object.readFileSync (node:fs:442:20)
+    at loadSource (node:internal/modules/cjs/loader:1573:17)
+    at Object..js (node:internal/modules/cjs/loader:1692:44)
+    at Module.load (node:internal/modules/cjs/loader:1303:32)
+    at Function._load (node:internal/modules/cjs/loader:1117:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:218:24)
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1325:12)
+    at mod.require (/Users/vitalii/Desktop/pets/watchthis/node_modules/next/dist/server/require-hook.js:65:28)
+    at require (node:internal/modules/helpers:136:16)
+    at /Users/vitalii/Desktop/pets/watchthis/.next/server/pages/api/frame/[marketId].js:70:27
+    at Object.<anonymous> (/Users/vitalii/Desktop/pets/watchthis/.next/server/pages/api/frame/[marketId].js:76:3)
+    at Module._compile (node:internal/modules/cjs/loader:1546:14)
+    at Object..js (node:internal/modules/cjs/loader:1698:10)
+    at Module.load (node:internal/modules/cjs/loader:1303:32) {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/Users/vitalii/Desktop/pets/watchthis/.next/server/webpack-api-runtime.js'
+}
+ ✓ Compiled /_error in 486ms (276 modules)
+ ⨯ Error: Cannot find module '/Users/vitalii/Desktop/pets/watchthis/.next/server/pages/_document.js'
+Require stack:
+- /Users/vitalii/Desktop/pets/watchthis/node_modules/next/dist/server/require.js
+- /Users/vitalii/Desktop/pets/watchthis/node_modules/next/dist/server/load-components.js
+- /Users/vitalii/Desktop/pets/watchthis/node_modules/next/dist/build/utils.js
+- /Users/vitalii/Desktop/pets/watchthis/node_modules/next/dist/server/dev/hot-middleware.js
+- /Users/vitalii/Desktop/pets/watchthis/node_modules/next/dist/server/dev/hot-reloader-webpack.js
+- /Users/vitalii/Desktop/pets/watchthis/node_modules/next/dist/server/lib/router-utils/setup-dev-bundler.js
+- /Users/vitalii/Desktop/pets/watchthis/node_modules/next/dist/server/lib/router-server.js
+- /Users/vitalii/Desktop/pets/watchthis/node_modules/next/dist/server/lib/start-server.js
+    at Function.<anonymous> (node:internal/modules/cjs/loader:1239:15)
+    at /Users/vitalii/Desktop/pets/watchthis/node_modules/next/dist/server/require-hook.js:55:36
+    at Function._load (node:internal/modules/cjs/loader:1064:27)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:218:24)
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1325:12)
+    at mod.require (/Users/vitalii/Desktop/pets/watchthis/node_modules/next/dist/server/require-hook.js:65:28)
+    at require (node:internal/modules/helpers:136:16)
+    at requirePage (/Users/vitalii/Desktop/pets/watchthis/node_modules/next/dist/server/require.js:109:84)
+    at /Users/vitalii/Desktop/pets/watchthis/node_modules/next/dist/server/load-components.js:72:65
+    at async Promise.all (index 0)
+    at async loadComponentsImpl (/Users/vitalii/Desktop/pets/watchthis/node_modules/next/dist/server/load-components.js:71:33)
+    at async DevServer.findPageComponentsImpl (/Users/vitalii/Desktop/pets/watchthis/node_modules/next/dist/server/next-server.js:714:36) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    '/Users/vitalii/Desktop/pets/watchthis/node_modules/next/dist/server/require.js',
+    '/Users/vitalii/Desktop/pets/watchthis/node_modules/next/dist/server/load-components.js',
+    '/Users/vitalii/Desktop/pets/watchthis/node_modules/next/dist/build/utils.js',
+    '/Users/vitalii/Desktop/pets/watchthis/node_modules/next/dist/server/dev/hot-middleware.js',
+    '/Users/vitalii/Desktop/pets/watchthis/node_modules/next/dist/server/dev/hot-reloader-webpack.js',
+    '/Users/vitalii/Desktop/pets/watchthis/node_modules/next/dist/server/lib/router-utils/setup-dev-bundler.js',
+    '/Users/vitalii/Desktop/pets/watchthis/node_modules/next/dist/server/lib/router-server.js',
+    '/Users/vitalii/Desktop/pets/watchthis/node_modules/next/dist/server/lib/start-server.js'
+  ]
+}
+ GET /api/frame/market_196d17ab7e5d4e49 500 in 1041ms
+ ⚠ Cross origin request detected from 42ccb2de7c61.ngrok-free.app to /_next/* resource. In a future major version of Next.js, you will need to explicitly configure "allowedDevOrigins" in next.config to allow this.
+Read more: https://nextjs.org/docs/app/api-reference/config/next-config-js/allowedDevOrigins

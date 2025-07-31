@@ -9,12 +9,15 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@neynar/nodejs-sdk": "^1.x",
+    "@coinbase/onchainkit": "^0.38.18",
     "@coinbase/wallet-sdk": "^3.x",
-    "next": "^14.x",
+    "@farcaster/frame-sdk": "^0.1.8",
+    "@neynar/nodejs-sdk": "^1.x",
+    "@supabase/supabase-js": "^2.53.0",
     "ethers": "^6.x",
-    "openai": "^4.x",
     "mongodb": "^6.x",
+    "next": "^14.x",
+    "openai": "^4.104.0",
     "react": "^18",
     "react-dom": "^18"
   },

@@ -1,0 +1,17 @@
+{
+  "accountAssociation": {
+    "header": "eyJmaWQiOjEsInR5cGUiOiJjdXN0b2R5IiwiaWF0IjoxNjk0NDY5NjAwfQ",
+    "payload": "eyJkb21haW4iOiJ3YXRjaHRoaXNib3QudmVyY2VsLmFwcCJ9",
+    "signature": "MHhiMzQ3YjE4MTExMTM1NzU5MDBlMDRhOTY5OGQ0NTk0MTI1YTJhZjI1Y2FiZGEyYWM0ZjVkOTFmOWMwOTc1ZWU4NjA3ZTQ3MWIxNmY0NzJmNmI4ZGUxNzUzYzI3YmQxMGRmMjcxZTMzMzgzNGU5ZjJlMGY5MDFkMmNlNDU1NDA5NjFi"
+  },
+  "frame": {
+    "version": "1",
+    "name": "iWager Prediction Markets",
+    "iconUrl": "https://watchthisbot.vercel.app/api/frame/image/home",
+    "homeUrl": "https://watchthisbot.vercel.app/api/frames/",
+    "imageUrl": "https://watchthisbot.vercel.app/api/frame/image/home", 
+    "buttonTitle": "Place Bet",
+    "splashImageUrl": "https://watchthisbot.vercel.app/api/frame/image/home",
+    "splashBackgroundColor": "#1f2937"
+  }
+}

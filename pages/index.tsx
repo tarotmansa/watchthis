@@ -12,10 +12,10 @@ const Home: NextPage = () => {
         <h3>Development Progress</h3>
         <ul>
           <li>✅ Function 1: Webhook detection and mention logging</li>
-          <li>⏳ Function 2: Format validation (next iteration)</li>
-          <li>⏳ Function 3: AI-powered validation</li>
-          <li>⏳ Function 4: Market database storage</li>
-          <li>⏳ Function 5: Frame generation</li>
+          <li>✅ Function 2: Basic format validation with bot responses</li>
+          <li>✅ Function 3: AI-powered validation using OpenRouter/Mistral</li>
+          <li>✅ Function 4: Market database storage</li>
+          <li>✅ Function 5: Frame generation</li>
           <li>⏳ Function 6: Smart contract betting</li>
           <li>⏳ Function 7: Market resolution and payouts</li>
         </ul>
