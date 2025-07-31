@@ -53,6 +53,7 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
         undefined,
         'Market Not Found'
       );
+      res.setHeader('Content-Type', 'text/html');
       return res.status(404).send(html);
     }
 
@@ -68,6 +69,7 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
         undefined,
         `Confirm YES Bet - $${userInput}`
       );
+      res.setHeader('Content-Type', 'text/html');
       return res.status(200).send(html);
     } else if (buttonIndex === 2) {
       // Bet NO
@@ -81,6 +83,7 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
         undefined,
         `Confirm NO Bet - $${userInput}`
       );
+      res.setHeader('Content-Type', 'text/html');
       return res.status(200).send(html);
     } else if (buttonIndex === 3) {
       // Details
@@ -94,6 +97,7 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
         undefined,
         `Market Details: ${market.question}`
       );
+      res.setHeader('Content-Type', 'text/html');
       return res.status(200).send(html);
     }
   }
@@ -113,6 +117,7 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
       undefined,
       'Market Not Found'
     );
+    res.setHeader('Content-Type', 'text/html');
     return res.status(404).send(html);
   }
 
@@ -127,6 +132,7 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
     'Enter bet amount (USDC)',
     market.question
   );
+  res.setHeader('Content-Type', 'text/html');
   return res.status(200).send(html);
 }
 

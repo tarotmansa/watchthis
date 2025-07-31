@@ -317,16 +317,16 @@ async function sendBotReplyWithFrame(parentHash: string, replyText: string, mark
     const baseUrl = appUrl?.endsWith('/') ? appUrl.slice(0, -1) : appUrl;
     const frameUrl = `${baseUrl}/api/frames/market/${marketId}`;
 
-    console.log('🖼️ Publishing cast with NO URL text - using direct frame publishing');
+    console.log('🖼️ Publishing cast with frame embed - using proper Farcaster frame embedding');
     
-    // Publish ONLY the success message text, then publish frame separately
-    await client.publishCast(botSignerUuid, replyText, {
-      replyTo: parentHash
-    });
-    
-    // Use our frame URL since we confirmed publishing method works
-    const cast = await client.publishCast(botSignerUuid, frameUrl, {
-      replyTo: parentHash
+    // Publish the success message with the frame as an embed (not plain text)
+    const cast = await client.publishCast(botSignerUuid, replyText, {
+      replyTo: parentHash,
+      embeds: [
+        {
+          url: frameUrl
+        }
+      ]
     });
 
     console.log('✅ Frame cast sent successfully:', {

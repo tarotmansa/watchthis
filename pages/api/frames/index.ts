@@ -49,6 +49,7 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
         `${process.env.NEXT_PUBLIC_APP_URL}/api/frames/`,
         [{ label: 'No markets yet' }]
       );
+      res.setHeader('Content-Type', 'text/html');
       return res.status(200).send(html);
     }
 
@@ -64,6 +65,7 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
       ],
       'Enter bet amount (USDC)'
     );
+    res.setHeader('Content-Type', 'text/html');
     return res.status(200).send(html);
   }
 
@@ -73,6 +75,8 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
     `${process.env.NEXT_PUBLIC_APP_URL}/api/frames/`,
     [{ label: 'View Markets' }]
   );
+  
+  res.setHeader('Content-Type', 'text/html');
   return res.status(200).send(html);
 }
 

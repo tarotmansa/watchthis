@@ -52,6 +52,7 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
         undefined,
         `Bet ${action.toUpperCase()} Confirmed!`
       );
+      res.setHeader('Content-Type', 'text/html');
       return res.status(200).send(html);
     } else {
       // Cancel bet - go back to market
@@ -66,6 +67,7 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
         'Enter bet amount (USDC)',
         'Back to Market'
       );
+      res.setHeader('Content-Type', 'text/html');
       return res.status(200).send(html);
     }
   }
@@ -81,6 +83,7 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
     undefined,
     `Confirm ${action.toUpperCase()} Bet`
   );
+  res.setHeader('Content-Type', 'text/html');
   return res.status(200).send(html);
 }
 
