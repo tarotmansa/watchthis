@@ -8,7 +8,7 @@
     "version": "1",
     "name": "iWager Prediction Markets",
     "iconUrl": "https://watchthisbot.vercel.app/api/frame/image/home",
-    "homeUrl": "https://watchthisbot.vercel.app/frames/",
+    "homeUrl": "https://watchthisbot.vercel.app/api/frames/",
     "imageUrl": "https://watchthisbot.vercel.app/api/frame/image/home",
     "buttonTitle": "Place Bet",
     "splashImageUrl": "https://watchthisbot.vercel.app/api/frame/image/home",

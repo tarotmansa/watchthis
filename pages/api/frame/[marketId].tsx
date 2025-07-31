@@ -169,24 +169,52 @@ function generateFrameHtml(market: any): string {
 <html>
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta property="fc:frame" content="vNext" />
     <meta property="fc:frame:image" content="${imageUrl}" />
     <meta property="fc:frame:post_url" content="${frameUrl}" />
     <meta property="fc:frame:button:1" content="Bet YES" />
     <meta property="fc:frame:button:2" content="Bet NO" />
     <meta property="fc:frame:button:3" content="Details" />
+    <meta property="fc:frame:input:text" content="Enter bet amount" />
+    <meta property="og:title" content="${market.question}" />
+    <meta property="og:description" content="AI Confidence: ${Math.round(market.ai_confidence * 100)}% • Pool: $${market.total_pool} USDC" />
     <meta property="og:image" content="${imageUrl}" />
     <title>${market.question}</title>
   </head>
 <body>
-  <div style="padding: 2rem; font-family: monospace; text-align: center;">
-    <h1>🎯 iWager Prediction Market</h1>
-    <h2>${market.question}</h2>
-    <p>💰 Pool: $${market.total_pool} USDC</p>
-    <p>📈 YES: ${yesPercent}% ($${market.yes_shares})</p>
-    <p>📉 NO: ${noPercent}% ($${market.no_shares})</p>
-    <p>⏰ Closes: ${new Date(market.close_time).toLocaleDateString()}</p>
+  <div style="min-height: 100vh; width: 100%; background-color: #0f172a; color: white; font-family: system-ui, sans-serif; padding: 1rem; box-sizing: border-box;">
+    <div style="text-align: center; margin-bottom: 2rem;">
+      <h1 style="font-size: 1.5rem; margin: 0 0 0.5rem 0;">🎯 ${market.question}</h1>
+      <p style="color: #94a3b8; margin: 0;">iWager Prediction Market</p>
+    </div>
+    
+    <div style="background-color: #1e293b; border-radius: 12px; padding: 1.5rem; margin-bottom: 2rem; border: 1px solid #334155;">
+      <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin-bottom: 1rem;">
+        <div style="text-align: center;">
+          <div style="color: #94a3b8; font-size: 0.8rem;">AI CONFIDENCE</div>
+          <div style="font-size: 1.5rem; font-weight: bold; color: #10b981;">${Math.round(market.ai_confidence * 100)}%</div>
+        </div>
+        <div style="text-align: center;">
+          <div style="color: #94a3b8; font-size: 0.8rem;">TOTAL POOL</div>
+          <div style="font-size: 1.5rem; font-weight: bold; color: #f59e0b;">$${market.total_pool}</div>
+        </div>
+      </div>
+      
+      <div style="background-color: #0f172a; border-radius: 8px; height: 32px; position: relative; overflow: hidden;">
+        <div style="position: absolute; left: 0; top: 0; width: ${yesPercent}%; height: 100%; background-color: #10b981;"></div>
+        <div style="position: absolute; right: 0; top: 0; width: ${noPercent}%; height: 100%; background-color: #ef4444;"></div>
+        <div style="position: absolute; left: 0; top: 0; width: 100%; height: 100%; display: flex; align-items: center; justify-content: space-between; padding: 0 1rem; font-size: 0.9rem; font-weight: bold;">
+          <span style="color: ${yesPercent > 50 ? 'white' : '#10b981'};">YES ${yesPercent}%</span>
+          <span style="color: ${noPercent > 50 ? 'white' : '#ef4444'};">NO ${noPercent}%</span>
+        </div>
+      </div>
+    </div>
+    
+    <div style="background-color: #1e293b; border-radius: 12px; padding: 1rem; border: 1px solid #334155; text-align: center;">
+      <p style="margin: 0; color: #94a3b8; font-size: 0.9rem;">💰 Pool: $${market.total_pool} USDC • ⏰ Closes: ${new Date(market.close_time).toLocaleDateString()}</p>
+      <p style="margin: 0.5rem 0 0 0; color: #64748b; font-size: 0.8rem;">Market ID: ${market.market_id.substring(0, 16)}...</p>
+    </div>
   </div>
 </body>
 </html>`;

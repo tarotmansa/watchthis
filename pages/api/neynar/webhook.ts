@@ -315,7 +315,7 @@ async function sendBotReplyWithFrame(parentHash: string, replyText: string, mark
     const appUrl = process.env.NEXT_PUBLIC_APP_URL;
     // Ensure proper HTTPS URL formatting for ngrok compatibility
     const baseUrl = appUrl?.endsWith('/') ? appUrl.slice(0, -1) : appUrl;
-    const frameUrl = `${baseUrl}/frames/market/${marketId}`;
+    const frameUrl = `${baseUrl}/api/frame/${marketId}`;
 
     console.log('🖼️ Publishing cast with frame embed - using proper Farcaster frame embedding');
     
@@ -557,7 +557,7 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
               console.log('\n🖼️ STARTING FRAME GENERATION (FUNCTION 5)');
               
               const appUrl = process.env.NEXT_PUBLIC_APP_URL;
-              const frameUrl = `${appUrl}/frames/market/${market.market_id}`;
+              const frameUrl = `${appUrl}/api/frame/${market.market_id}`;
               
               console.log('🔗 New Frame URL generated:', frameUrl);
               
